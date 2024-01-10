@@ -41,7 +41,7 @@
 /* Nav End */
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1024px) {
     #nav {
         display: flex;
         flex-direction: row;
@@ -120,7 +120,7 @@
     font-size: 10px;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1024px) {
     #captions h1 {
         font-size: 34px;
         line-height: 34px;
@@ -166,7 +166,7 @@
     margin-left: 25px;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1024px) {
     #footer {
         height: 110%;
         flex-direction: column;
@@ -196,7 +196,7 @@
     text-decoration: none;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1024px) {
     #footer a {
         border-bottom: 1px solid #8d8d8d;
         text-align: start;
@@ -285,120 +285,152 @@
 }
 
 #engs {
-    margin: -70px 110px 0px 225px;
+    padding: 0px 0px;
 }
 
 
 
 
 /*-------- Log in page --------*/
-#body-log {
-    background-image: url(images/identity_flickr_com/033120190455-by-Henry.2edde7a9\ \(1\).jpg);
-    background-position: center;
-    height: 55vh;
-    background-size: cover;
+@media (min-width: 700px) and (max-width: 1440px) {
+    #body-log {
+        background-image: url(images/identity_flickr_com/033120190455-by-Henry.2edde7a9\ \(1\).jpg);
+        background-position: center;
+        height: 55vh;
+        background-size: cover;
+    }
+
+    #log {
+        width: 28%;
+        height: 42vh;
+        margin: auto;
+        transform: translateY(80%);
+        background-color: #ffffff;
+        border-radius: 3px;
+    }
+
+    #log button {
+        padding: 2% 38%;
+        margin: 9% 0px 0px;
+        margin-left: 7%;
+        line-height: 20.8px;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #ffffff;
+        background-color: #128fdc;
+        border: none;
+        border-radius: 3px;
+        transition: 0.5s;
+    }
+
+    #log:hover button {
+        background-color: #2aa2ec;
+    }
+
+    #member {
+        font-size: 14px;
+        transform: translate(70px, 15px);
+        margin: auto;
+    }
+
+    #log img {
+        width: 10%;
+        transform: translate(160px, 15px);
+    }
+
+    #login {
+        z-index: 100;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #212124;
+        transform: translate(110px, 15px);
+    }
+
+    #log input {
+        width: 85%;
+        margin-left: 7%;
+        margin-top: 10%;
+        height: 20%;
+        border: 1px solid #919191;
+    }
+
+    #log:hover input {
+        border: 1px solid rgb(132, 132, 248);
+    }
 }
 
-#log {
-    width: 28%;
-    height: 42vh;
-    margin: auto;
-    transform: translateY(80%);
-    background-color: #ffffff;
-    border-radius: 3px;
-}
+
 
 @media screen and (max-width:700px) {
+    #log img {
+        width: 15%;
+        z-index: 100;
+        margin-top: 20%;
+        margin-bottom: -20%;
+        margin-left: 50%;
+
+    }
+
+    input {
+        width: 92%;
+        margin-left: 12%;
+        margin-top: 5%;
+        height: 40%;
+        border: 1px solid #919191;
+    }
+
+    input:hover {
+        border: 1px solid rgb(132, 132, 248);
+    }
+
+    #login {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #212124;
+        margin-top: 20%;
+        margin-left: 35%;
+    }
+
+    button {
+        padding: 2% 43%;
+        margin: 9% 0px 0px;
+        margin-left: 12%;
+        line-height: 20.8px;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #ffffff;
+        background-color: #128fdc;
+        border: none;
+        border-radius: 3px;
+        transition: 0.5s;
+    }
+
+    #member {
+        margin-left: 13%;
+        margin-top: 5%;
+        font-size: 14px;
+    }
+
+    #eng {
+        margin: 0px;
+    }
+
+    #nit {
+        color: black;
+    }
+
     #body-log {
         background-image: none;
         background-color: #ffffff;
+        overflow: hidden;
     }
 
     #log {
         width: 80%;
         height: 20vh;
     }
-}
-
-#log img {
-    width: 10%;
-    transform: translate(160px, 15px);
-}
-
-@media screen and (max-width:700px) {
-    #log img {
-        width: 15%;
-    }
-}
-
-#login {
-    z-index: 100;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #212124;
-    transform: translate(110px, 15px);
-}
-
-#log input {
-    width: 85%;
-    margin-left: 7%;
-    margin-top: 10%;
-    height: 20%;
-    border: 1px solid #919191;
-}
-
-#log:hover input {
-    border: 1px solid rgb(132, 132, 248);
-}
-
-@media screen and (max-width:700px) {
-    #log input {
-        width: 85%;
-        margin-left: 0%;
-        margin-top: 0%;
-        height: 20%;
-        border: 1px solid #919191;
-    }
-    #login {
-        margin: auto;
-    }
-
-    #log button {
-        margin: 0px 0px;
-        margin-left: 0%;
-    }
-
-    #eng {
-        margin: 0px;
-    }
-}
-
-#log button {
-    padding: 2% 38%;
-    margin: 9% 0px 0px;
-    margin-left: 7%;
-    line-height: 20.8px;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    color: #ffffff;
-    background-color: #128fdc;
-    border: none;
-    border-radius: 3px;
-    transition: 0.5s;
-}
-
-#log:hover button {
-    background-color: #2aa2ec;
-}
-
-#member {
-    font-size: 14px;
-    transform: translate(70px, 15px);
-    margin: auto;
-}
-
-#eng {
-    margin: 14% 10% -3% 21%;
 }

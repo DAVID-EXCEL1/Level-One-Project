@@ -306,10 +306,21 @@
         height: 95vh;
         background-color: #ffffff;
         margin: auto;
-        padding-top: 60px;
-        padding-right: 20%;
+        padding-top: 20px;
+        /* padding-right: 20px; */
     }
 
+    #sign img {
+        width: 10%;
+        z-index: 100;
+        margin-top: 20%;
+        margin-bottom: -20%;
+        margin-left: 50%;
+    }
+    #sign form {
+        padding-left: -10%;
+        padding-right: 20%;
+    }
     #sign h6 {
         font-size: 20px;
         font-weight: 400;
@@ -329,6 +340,7 @@
         border: none;
         border-radius: 3px;
         transition: 0.5s;
+        margin: 32px 0px 10px 40px;
     }
 
     #four {
@@ -340,7 +352,7 @@
     #member {
         font-size: 11px;
         line-break: none;
-        margin-left: 20%;
+        margin-left: 40%;
     }
 }
 
@@ -488,6 +500,6 @@
 
     #log {
         width: 80%;
-        height: 20vh;
+        /* height: 20vh; */
     }
 }
